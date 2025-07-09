@@ -1,26 +1,42 @@
-A Document Management System (DMS) repository built in Oracle Database is designed to securely store and manage digital documents. This system provides structured storage for document metadata, file locations, user details, access permissions, and activity logs.
+# Oracle DBMS Project
 
-The DMS repository typically includes:
+## 📘 Overview
 
-A DOCUMENTS table to store metadata (title, author, upload date, type, status).
+This repository contains the SQL scripts, schema design, and stored procedures for a **Database Management System (DBMS)** built using **Oracle Database**. The project is designed to demonstrate the core functionalities of a relational database system, including data storage, retrieval, normalization, indexing, user management, and transaction control.
 
-A USERS table to store registered user information.
+It can be adapted for use in various systems such as Inventory Management, Student Information Systems, Library Databases, and Document Management Systems.
 
-A FILE_STORAGE table or a BLOB column to reference or store file content.
+---
 
-A PERMISSIONS table to define user-level access (read/write/delete).
+## 📂 Features
 
-An ACCESS_LOGS table to track document access history and activity for audit purposes.
+- 🔹 Relational database design using normalization (1NF to 3NF)
+- 🔹 Creation of tables with constraints (PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL)
+- 🔹 Use of **PL/SQL procedures** and **functions**
+- 🔹 Transaction handling with COMMIT, ROLLBACK, and SAVEPOINT
+- 🔹 Triggers for automatic actions
+- 🔹 Views and Indexes for optimized access
+- 🔹 Sample data population and test queries
 
-By using Oracle's advanced SQL capabilities, including BLOB data types and PL/SQL procedures, this system ensures:
+---
 
-Fast retrieval and secure storage of documents.
+## 🧱 Technologies
 
-Role-based access control.
+- **Database**: Oracle Database 11g / 12c / XE  
+- **Language**: SQL, PL/SQL  
+- **Tool**: Oracle SQL Developer / TOAD / SQL*Plus
 
-Scalability for large volumes of documents.
+---
 
-Integration with front-end applications or APIs.
+## 📑 Project Structure
 
-This DMS repository serves as the backend for enterprise-level document workflows such as HR systems, project archives, legal records, and more.
-
+```plaintext
+📁 oracle-dbms-project/
+│
+├── 📄 schema.sql              # All CREATE TABLE statements
+├── 📄 procedures.sql          # PL/SQL stored procedures and functions
+├── 📄 triggers.sql            # Trigger scripts
+├── 📄 views.sql               # View definitions
+├── 📄 insert_sample_data.sql  # Sample data for testing
+├── 📄 queries.sql             # Frequently used queries and test cases
+└── 📄 README.md               # Project documentation
